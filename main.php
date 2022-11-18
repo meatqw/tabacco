@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title></title>
+  <link rel="preload" href="fonts/LucidaGrande-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/RFDewi-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/RFDewi-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/RFDewi-Semibold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/RFDewi-Ultrabold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+<body class="page__body">
+  <div class="site-container site-container--100vh">
+    <header class="header">
+  <div class="container header__container">
+    <div class="header__left">
+      <div class="header__logo">
+        <img loading="lazy" src="img/tobacco.svg" class="image" width="156" height="22" alt="Tobacco">
+      </div>
+      <button class="btn-reset btn header__btn" data-graph-path="menu">
+        <img loading="lazy" src="img/hamburger.svg" class="image" width="28" height="28" alt="path">
+        <span>Каталог</span>
+      </button>
+      <button class="btn-reset btn btn--gray header__user"></button>
+    </div>
+    <div class="header__right">
+      <ul class="list-reset header__list">
+        <li class="header__item">
+          <div class="header__icon">
+            <img loading="lazy" src="img/path-green.svg" class="image" width="22" height="22" alt="path">
+          </div>
+          <div class="header__info">
+            <div class="header__crit">В наличии</div>
+            <div class="header__value">6 700 ₽</div>
+          </div>
+        </li>
+        <li class="header__item">
+          <div class="header__icon">
+            <img loading="lazy" src="img/path-orange.svg" class="image" width="22" height="22" alt="path">
+          </div>
+          <div class="header__info">
+            <div class="header__crit">Удаленный склад</div>
+            <div class="header__value">12 450 ₽</div>
+          </div>
+        </li>
+        <li class="header__item">
+          <div class="header__icon">
+            <img loading="lazy" src="img/path-blue.svg" class="image" width="22" height="22" alt="path">
+          </div>
+          <div class="header__info">
+            <div class="header__crit">В пути</div>
+            <div class="header__value">10 050 ₽</div>
+          </div>
+        </li>
+      </ul>
+      <button class="btn-reset btn header__btn header__btn--path" onclick="location.href = '/backet.php'">
+        <img loading="lazy" src="img/path.svg" class="image" width="28" height="28" alt="path">
+        <div class="header__info">
+          <div class="header__crit header__crit--btn">Оформить</div>
+          <div class="header__value header__value--btn">29 200 ₽</div>
+        </div>
+      </button>
+    </div>
+  </div>
+</header>
+
+    <main class="main">
+      <div class="main__container container">
+        <div class="sidebar">
+  <ul class="list-reset sidebar__list accordion">
+    <li class="sidebar__item accordion-item">
+      <button class="btn-reset sidebar__btn sidebar__accordion accordion-header">Аксесуары для
+        кальяна</button>
+      <div class="sidebar__panel">
+        <ul class="list-reset sidebar__sublist">
+          <li class="sidebar__subitem">
+            <button class="btn-reset sidebar__btn sidebar__btn--sub">
+              <img loading="lazy" src="./img/Mini.svg" class="image" width="47" height="27" alt="Mini">
+            </button>
+          </li>
+          <li class="sidebar__subitem">
+            <button class="btn-reset sidebar__btn sidebar__btn--sub">
+              <img loading="lazy" src="./img/Mini.svg" class="image" width="47" height="27" alt="Mini">
+            </button>
+          </li>
+        </ul>
+      </div>
+    </li>
+    <li class="sidebar__item accordion-item">
+      <button class="btn-reset sidebar__btn sidebar__accordion accordion-header">Кальяны</button>
+      <div class="sidebar__panel">
+        <ul class="list-reset sidebar__sublist">
+          <li class="sidebar__subitem">
+            <button class="btn-reset sidebar__btn sidebar__btn--sub">
+              <img loading="lazy" src="./img/Mini.svg" class="image" width="47" height="27" alt="Mini">
+            </button>
+          </li>
+          <li class="sidebar__subitem">
+            <button class="btn-reset sidebar__btn sidebar__btn--sub">
+              <img loading="lazy" src="./img/Mini.svg" class="image" width="47" height="27" alt="Mini">
+            </button>
+          </li>
+        </ul>
+      </div>
+    </li>
+  </ul>
+</div>
+
+        <div class="main__content">
+          <section class="filtr">
+  <h2 class="filtr__title">Фильтр</h2>
+  <div class="filtr__content">
+    <div class="filtr__dropdown">
+      <div class="custom-select">
+        <select>
+          <option value="0">Наличие</option>
+          <option value="1">Все</option>
+          <option value="2">В наличии</option>
+          <option value="3">Удаленный склад</option>
+          <option value="4">В пути</option>
+        </select>
+      </div>
+    </div>
+    <div class="filtr__dropdown">
+      <div class="custom-select">
+        <select>
+          <option value="0">Вес</option>
+          <option value="1">10</option>
+          <option value="2">100</option>
+          <option value="3">1000</option>
+          <option value="4">10000</option>
+        </select>
+      </div>
+    </div>
+    <label class="btn-reset checkbox-btn filtr__btn">
+      <input type="checkbox" checked>
+      <span class="filtr__span filtr__span--orange">
+        <svg class="filtr__svg filtr__svg--top">
+          <use xlink:href="img/sprite.svg#top"></use>
+        </svg>
+      </span>
+    </label>
+    <label class="btn-reset checkbox-btn filtr__btn">
+      <input type="checkbox">
+      <span class="filtr__span filtr__span--green">
+        <svg class="filtr__svg filtr__svg--new">
+          <use xlink:href="img/sprite.svg#new"></use>
+        </svg>
+      </span>
+    </label>
+    <label class="btn-reset checkbox-btn filtr__btn">
+      <input type="checkbox">
+      <span class="filtr__span filtr__span--red">
+        <svg class="filtr__svg filtr__svg--sale">
+          <use xlink:href="img/sprite.svg#sale"></use>
+        </svg>
+      </span>
+    </label>
+  </div>
+</section>
+
+          <section class="main-content">
+  <h2 class="visually-hidden title">Каталог</h2>
+  <div class="main-content__head main-head">
+    <ul class="list-reset main-head__list">
+      <li class="main-head__item">Наименование</li>
+      <li class="main-head__item">Выбор склада</li>
+      <li class="main-head__item">Остаток</li>
+      <li class="main-head__item">Цена шт. </li>
+      <li class="main-head__item">Цена итого</li>
+    </ul>
+  </div>
+  <div class="main-content__body main-body">
+    <ul class="list-reset main-body__list accordion">
+      <li class="main-body__item accordion-item">
+        <button class="btn-reset btn--accordion main-body__accordion accordion-header">DARKSIDE CORE</button>
+        <div class="main-body__panel">
+          <ul class="list-reset main-body__sublist accordion accordion-child">
+            <li class="main-body__subitem accordion-item">
+              <button class="btn-reset btn--accordion main-body__accordion accordion-header">
+                DS CORE 100
+                <div class="tooltip">
+                  <img loading="lazy" src="img/tooltip.svg" class="image" width="20" height="20" alt="tooltip">
+                  <span class="tooltip__text">
+                    <ul class="list-reset tooltip__list">
+                      <li class="tooltip__item">Блок 10 шт.</li>
+                      <li class="tooltip__item">РРЦ 100 ₽/шт.</li>
+                    </ul>
+                  </span>
+                </div>
+              </button>
+              <div class="main-body__panel">
+                <ul class="list-reset main-body__sublist">
+                  <li class="main-body__subitem">
+                    <div class="product product--main">
+                      <div class="product__items">
+                        <div class="product__left">
+                          <img src="img/img.png" alt="product" class="image product__img">
+                          <h3 class="product__title">DS Core 250 «Вайт Чокомэрри»</h3>
+                          <div class="product__icon">
+                            <img loading="lazy" src="img/top.svg" class="image" width="23" height="27" alt="top">
+                          </div>
+                        </div>
+                        <ul class="list-reset product__right-list">
+                          <li class="product__right-item product__right-item--main">
+                            <button class="btn-reset product__presence">В наличии</button>
+                            <div class="product__residue">Много</div>
+                            <div class="product__calc product-calc">
+                              <button class="btn-reset product-calc__btn product-calc__btn--minus"></button>
+                              <div class="product-calc__value">
+                                146
+                                <span>14 блоков 6 шт</span>
+                              </div>
+                              <button class="btn-reset product-calc__btn product-calc__btn--plus"></button>
+                            </div>
+                            <div class="product__size">80 ₽</div>
+                            <div class="product__size-all">4 720 ₽</div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="product-accordion-content" style="display: none;">
+                      <ul class="list-reset product__right-list product__right-list--accordion">
+                        <li class="product__right-item">
+                          <div class="product__presence product__presence--ordering">В наличии</div>
+                          <div class="product__residue">Много</div>
+                          <div class="product__calc product-calc">
+                            <button class="btn-reset product-calc__btn product-calc__btn--minus"></button>
+                            <div class="product-calc__value">
+                              146
+                              <span>14 блоков 6 шт</span>
+                            </div>
+                            <button class="btn-reset product-calc__btn product-calc__btn--plus"></button>
+                          </div>
+                          <div class="product__size">80 ₽</div>
+                          <div class="product__size-all product__size-all--ordering">4 720 ₽</div>
+                          <button class="btn-reset product__btn product__btn--close"></button>
+                        </li>
+                        <li class="product__right-item">
+                          <div class="product__presence product__presence--ordering">В наличии</div>
+                          <div class="product__residue">Много</div>
+                          <div class="product__calc product-calc">
+                            <button class="btn-reset product-calc__btn product-calc__btn--minus"></button>
+                            <div class="product-calc__value">
+                              146
+                              <span>14 блоков 6 шт</span>
+                            </div>
+                            <button class="btn-reset product-calc__btn product-calc__btn--plus"></button>
+                          </div>
+                          <div class="product__size">80 ₽</div>
+                          <div class="product__size-all product__size-all--ordering">4 720 ₽</div>
+                          <button class="btn-reset product__btn product__btn--close"></button>
+                        </li>
+                        <li class="product__right-item">
+                          <div class="product__presence product__presence--ordering">В наличии</div>
+                          <div class="product__residue">Много</div>
+                          <div class="product__calc product-calc">
+                            <button class="btn-reset product-calc__btn product-calc__btn--minus"></button>
+                            <div class="product-calc__value">
+                              146
+                              <span>14 блоков 6 шт</span>
+                            </div>
+                            <button class="btn-reset product-calc__btn product-calc__btn--plus"></button>
+                          </div>
+                          <div class="product__size">80 ₽</div>
+                          <div class="product__size-all product__size-all--ordering">4 720 ₽</div>
+                          <button class="btn-reset product__btn product__btn--close"></button>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="product product--main">
+                      <div class="product__items">
+                        <div class="product__left">
+                          <img src="img/img.png" alt="product" class="image product__img">
+                          <h3 class="product__title">DS Core 250 «Вайт Чокомэрри»</h3>
+                          <div class="product__icon">
+                            <img loading="lazy" src="img/new.svg" class="image" width="25" height="26" alt="top">
+                          </div>
+                        </div>
+                        <ul class="list-reset product__right-list">
+                          <li class="product__right-item product__right-item--main">
+                            <div class="product__presence product__presence--orange">Удаленный склад</div>
+                            <div class="product__residue">Много</div>
+                            <button class="btn-reset btn btn--product product__btn">
+                              <img loading="lazy" src="img/path.svg" class="image" width="22" height="22" alt="path">
+                              Добавить
+                            </button>
+                            <div class="product__size">80 ₽</div>
+                            <div class="product__size-all">4 720 ₽</div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="product product--main product--none">
+                      <div class="product__items">
+                        <div class="product__left">
+                          <img src="img/img.png" alt="product" class="image product__img">
+                          <h3 class="product__title">DS Core 250 «Вайт Чокомэрри»</h3>
+                        </div>
+                        <ul class="list-reset product__right-list">
+                          <li class="product__right-item product__right-item--main">
+                            <div class="product__presence product__presence--gray">Нет в наличии</div>
+                            <div class="product__residue">—</div>
+                            <button class="btn-reset btn btn--product product__btn">
+                              <img loading="lazy" src="img/path.svg" class="image" width="22" height="22" alt="path">
+                              Добавить
+                            </button>
+                            <div class="product__size">—</div>
+                            <div class="product__size-all">—</div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="product product--main">
+                      <div class="product__items">
+                        <div class="product__left">
+                          <img src="img/img.png" alt="product" class="image product__img">
+                          <h3 class="product__title">DS Core 250 «Вайт Чокомэрри»</h3>
+                          <div class="product__icon">
+                            <img loading="lazy" src="img/sale.svg" class="image" width="28" height="20" alt="top">
+                          </div>
+                        </div>
+                        <ul class="list-reset product__right-list">
+                          <li class="product__right-item product__right-item--main">
+                            <div class="product__presence product__presence--blue">В пути</div>
+                            <div class="product__residue">47 шт</div>
+                            <button class="btn-reset btn btn--product product__btn">
+                              <img loading="lazy" src="img/path.svg" class="image" width="22" height="22" alt="path">
+                              Добавить
+                            </button>
+                            <div class="product__size">80 ₽</div>
+                            <div class="product__size-all product__size-all--zero">0</div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+        </div>
+      </div>
+    </main>
+    <div class="graph-modal">
+  <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="menu">
+    <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button>
+    <div class="graph-modal__content menu">
+      <ul class="list-reset menu__list">
+        <li class="menu__item">
+          <h2 class="menu__title">Аксессуары для кальяна</h2>
+          <a href="#" class="menu__link">Жидкости для чистки кальяна</a>
+          <a href="#" class="menu__link">Кадило</a>
+          <a href="#" class="menu__link">Калауд</a>
+          <a href="#" class="menu__link">Колбы</a>
+          <a href="#" class="menu__link">Колпаки</a>
+          <a href="#" class="menu__link">Комплектующие для кальяна</a>
+          <a href="#" class="menu__link">Мелассоуловители</a>
+          <a href="#" class="menu__link">Мундштуки</a>
+          <a href="#" class="menu__link">Плиты</a>
+          <a href="#" class="menu__link">Чаши</a>
+          <a href="#" class="menu__link">Шланги</a>
+          <a href="#" class="menu__link">Щипцы</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link menu__link--btn">Кальяны</a>
+          <a href="#" class="menu__link menu__link--btn">Лимонады</a>
+          <a href="#" class="menu__link menu__link--btn">Мерч</a>
+        </li>
+        <li class="menu__item">
+          <h2 class="menu__title">Табак для кальяна </h2>
+          <a href="#" class="menu__link">Absolute T</a>
+          <a href="#" class="menu__link">B3</a>
+          <a href="#" class="menu__link">BlackBurn</a>
+          <a href="#" class="menu__link">Brusko БКС</a>
+          <a href="#" class="menu__link">Brusko Табак</a>
+          <a href="#" class="menu__link">Chabacco</a>
+          <a href="#" class="menu__link">D-TOBACCO</a>
+          <a href="#" class="menu__link">Daly</a>
+          <a href="#" class="menu__link">Duft</a>
+          <a href="#" class="menu__link">Element</a>
+          <a href="#" class="menu__link">Endorphin</a>
+          <a href="#" class="menu__link">Frigate</a>
+          <a href="#" class="menu__link">Must Have</a>
+          <a href="#" class="menu__link">NАШ</a>
+          <a href="#" class="menu__link">Plazma</a>
+          <a href="#" class="menu__link">Sebero</a>
+          <a href="#" class="menu__link">Spectrum</a>
+        </li>
+        <div class="menu__debug">
+          <a href="#" class="menu__link menu__link--debug">Уголь</a>
+          <li class="menu__debug-item">
+            <h2 class="menu__title">Pod-системы</h2>
+            <a href="#" class="menu__link">BRUSKO Pod</a>
+            <a href="#" class="menu__link">Element Pod</a>
+            <a href="#" class="menu__link">Geek Vape Aegis</a>
+            <a href="#" class="menu__link">HQD</a>
+            <a href="#" class="menu__link">JUUL</a>
+            <a href="#" class="menu__link">SMOANT</a>
+            <a href="#" class="menu__link">Картриджи</a>
+          </li>
+        </div>
+        <li class="menu__item">
+          <h2 class="menu__title">Жидкости</h2>
+          <a href="#" class="menu__link">BOSHKI</a>
+          <a href="#" class="menu__link">BRUSKO Salt</a>
+          <a href="#" class="menu__link">DABBLER</a>
+          <a href="#" class="menu__link">HQD</a>
+          <a href="#" class="menu__link">HUSKY</a>
+          <a href="#" class="menu__link">IZI</a>
+          <a href="#" class="menu__link">MISHKA</a>
+          <a href="#" class="menu__link">MONSTERVAPOR</a>
+          <a href="#" class="menu__link">MORS</a>
+          <a href="#" class="menu__link">SKALA</a>
+          <a href="#" class="menu__link">HOTSPOT</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+  </div>
+  <script src="https://snipp.ru/cdn/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+</body>
+
+</html>

@@ -30,7 +30,7 @@
         <img loading="lazy" src="img/hamburger.svg" class="image" width="28" height="28" alt="path">
         <span>Каталог</span>
       </button>
-      <button class="btn-reset btn btn--gray header__user" onclick="location.href = '/main.php'"></button>
+      <button class="btn-reset btn btn--gray header__user" onclick="location.href = '/main.html'"></button>
     </div>
   </div>
 </header>

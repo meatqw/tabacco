@@ -37,7 +37,7 @@
                 class="input-reset form__input input login__input" placeholder="Пароль">
               <button class="btn-reset password__control"></button>
             </label>
-            <button class="btn-reset btn form__btn login__btn" onclick="location.href = '/main.php'">
+            <button class="btn-reset btn form__btn login__btn" onclick="location.href = '/main.html'">
               <svg class="">
                 <use xlink:href="img/sprite.svg#long_right"></use>
               </svg>

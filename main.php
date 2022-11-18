@@ -62,7 +62,7 @@
           </div>
         </li>
       </ul>
-      <button class="btn-reset btn header__btn header__btn--path" onclick="location.href = '/backet.php'">
+      <button class="btn-reset btn header__btn header__btn--path" onclick="location.href = '/backet.html'">
         <img loading="lazy" src="img/path.svg" class="image" width="28" height="28" alt="path">
         <div class="header__info">
           <div class="header__crit header__crit--btn">Оформить</div>

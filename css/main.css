@@ -1389,6 +1389,12 @@ a {
   padding: 40px 28px;
 }
 
+.account-tabs__nav {
+  position: relative;
+}
+.account-tabs__nav-btn::before {
+  display: none;
+}
 .my-data__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1415,6 +1421,9 @@ a {
   padding-top: 38px;
 }
 
+.my-orders__body {
+  padding-bottom: 0;
+}
 .my-orders__footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1428,6 +1437,149 @@ a {
   font-weight: 700;
   font-size: 32px;
   line-height: 38px;
+}
+.my-orders__number {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+}
+.my-orders__data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+}
+.my-orders__point {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+}
+.my-orders__sum {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+}
+.my-orders__pay-state {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.my-orders__pay-state span {
+  margin-top: 6px;
+  font-weight: 700;
+  font-size: 8px;
+  line-height: 10px;
+}
+.my-orders__order-state {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.my-orders__btn {
+  border-radius: 16px;
+  padding: 7px 15px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--light-color);
+}
+.my-orders__btn--red {
+  background-color: var(--red-color);
+}
+.my-orders__btn--pink {
+  background-color: #c462f9;
+}
+.my-orders__btn--blue {
+  background-color: #00afc8;
+}
+.my-orders__btn--gray {
+  color: #7a7a7a;
+  background-color: var(--light-color);
+  cursor: default;
+}
+.my-orders__btn--green {
+  background-color: #58c800;
+}
+.my-orders__btn--orange {
+  background-color: #fcad08;
+}
+.my-orders__hide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.account-filtr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 45px;
+}
+.account-filtr__title {
+  margin: 0;
+  margin-right: 35px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+}
+.account-filtr__item:not(:last-child) {
+  margin-right: 24px;
+}
+.account-filtr__item--type {
+  width: 333px;
+}
+.account-filtr__item--payment {
+  width: 213px;
+}
+.account-filtr__calendar {
+  border: 1px solid var(--alto-color);
+  border-radius: 20px;
+  width: 175px;
+  height: 42px;
+}
+
+.table {
+  border-spacing: 0;
+  width: 100%;
+}
+.table__th {
+  padding-bottom: 24px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+}
+.table__td {
+  border-top: 1px solid #d8d8d8;
+  padding: 12px 0;
 }
 
 .my-addresses__item {
@@ -1524,6 +1676,17 @@ a {
   background-position: center;
   background-size: 22px;
   background-repeat: no-repeat;
+}
+
+.btn-hide {
+  border-radius: 12px;
+  width: 50px;
+  height: 50px;
+  background-image: url("../img/show.svg");
+  background-position: center center;
+  background-size: 24px;
+  background-repeat: no-repeat;
+  background-color: var(--gray-color);
 }
 
 .input {

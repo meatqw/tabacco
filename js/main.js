@@ -9,11 +9,11 @@
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _components_modal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/modal */ "./src/js/components/modal.js");
-/* harmony import */ var _components_accordion__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/accordion */ "./src/js/components/accordion.js");
-/* harmony import */ var _components_accordion__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_components_accordion__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _components_show_hide_password__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/show-hide-password */ "./src/js/components/show-hide-password.js");
-/* harmony import */ var _components_show_hide_password__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_components_show_hide_password__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _components_show_hide_password__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/show-hide-password */ "./src/js/components/show-hide-password.js");
+/* harmony import */ var _components_show_hide_password__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_components_show_hide_password__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_modal__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/modal */ "./src/js/components/modal.js");
+/* harmony import */ var _components_accordion__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/accordion */ "./src/js/components/accordion.js");
+/* harmony import */ var _components_accordion__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_components_accordion__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _components_dropdown__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/dropdown */ "./src/js/components/dropdown.js");
 /* harmony import */ var _components_dropdown__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_components_dropdown__WEBPACK_IMPORTED_MODULE_3__);
 
@@ -197,26 +197,19 @@ $('.accordion').sortable({
 /***/ (() => {
 
 var x, i, j, selElmnt, a, b, c;
-/*look for any elements with the class "custom-select":*/
 x = document.getElementsByClassName("custom-select");
 for (i = 0; i < x.length; i++) {
   selElmnt = x[i].getElementsByTagName("select")[0];
-  /*for each element, create a new DIV that will act as the selected item:*/
   a = document.createElement("DIV");
   a.setAttribute("class", "select-selected");
   a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
   x[i].appendChild(a);
-  /*for each element, create a new DIV that will contain the option list:*/
   b = document.createElement("DIV");
   b.setAttribute("class", "select-items select-hide");
   for (j = 1; j < selElmnt.length; j++) {
-    /*for each option in the original select element,
-    create a new DIV that will act as an option item:*/
     c = document.createElement("DIV");
     c.innerHTML = selElmnt.options[j].innerHTML;
     c.addEventListener("click", function (e) {
-      /*when an item is clicked, update the original select box,
-      and the selected item:*/
       var y, i, k, s, h;
       s = this.parentNode.parentNode.getElementsByTagName("select")[0];
       h = this.parentNode.previousSibling;
@@ -238,8 +231,6 @@ for (i = 0; i < x.length; i++) {
   }
   x[i].appendChild(b);
   a.addEventListener("click", function (e) {
-    /*when the select box is clicked, close any other select boxes,
-    and open/close the current select box:*/
     e.stopPropagation();
     closeAllSelect(this);
     this.nextSibling.classList.toggle("select-hide");
@@ -247,8 +238,6 @@ for (i = 0; i < x.length; i++) {
   });
 }
 function closeAllSelect(elmnt) {
-  /*a function that will close all select boxes in the document,
-  except the current select box:*/
   var x,
     y,
     i,
@@ -268,8 +257,6 @@ function closeAllSelect(elmnt) {
     }
   }
 }
-/*if the user clicks anywhere outside the select box,
-then close all select boxes:*/
 document.addEventListener("click", closeAllSelect);
 
 /***/ }),

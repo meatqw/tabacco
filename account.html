@@ -16,6 +16,8 @@
   <link rel="stylesheet" href="css/vendor.css">
   <link rel="stylesheet" href="css/main.css">
   <script defer src="js/main.js"></script>
+  <!-- calendar -->
+
 </head>
 
 <body class="page__body">
@@ -26,8 +28,12 @@
       <div class="header__logo">
         <img loading="lazy" src="img/tobacco.svg" class="image" width="156" height="22" alt="Tobacco">
       </div>
-      <button class="btn-reset btn header__btn" data-graph-path="menu">
+      <button class="btn-reset btn header__btn" data-graph-path="menu" data-btn-open>
         <img loading="lazy" src="img/hamburger.svg" class="image" width="28" height="28" alt="path">
+        <span>Каталог</span>
+      </button>
+      <button class="btn-reset btn header__btn header__btn--catalog js-modal-close" data-btn-close>
+        <img loading="lazy" src="img/close.svg" class="image" width="28" height="28" alt="path">
         <span>Каталог</span>
       </button>
       <button class="btn-reset btn btn--gray header__user"></button>
@@ -62,7 +68,7 @@
           </div>
         </li>
       </ul>
-      <button class="btn-reset btn header__btn header__btn--path" onclick="location.href = '/backet.html'">
+      <button class="btn-reset btn header__btn header__btn--path" onclick="location.href = 'backet.html'">
         <img loading="lazy" src="img/path.svg" class="image" width="28" height="28" alt="path">
         <div class="header__info">
           <div class="header__crit header__crit--btn">Оформить</div>
@@ -132,8 +138,14 @@
                   <div class="my-orders__body tabs-section-body">
                     <div class="my-orders__filtr account-filtr">
                       <h3 class="my-orders__subtitle account-filtr__title">Фильтр</h3>
-                      <div class="account-filtr__item account-filtr__calendar calendar"></div>
+                      <div class="account-filtr__item account-filtr__calendar calendar">
+                        <input type="text" id="input" class="calendar__input datepicker-here calendar"
+                          placeholder="Календарь" data-position="right top">
+                        <img loading="lazy" src="../img/calendar.svg" class="calendar__icon" width="22" height="22"
+                          alt="calendar">
+                      </div>
                       <div class="account-filtr__item account-filtr__item--type filtr__dropdown">
+                        <span class="notice">3</span>
                         <div class="custom-select">
                           <select>
                             <option value="0">Марракеш Ясень</option>

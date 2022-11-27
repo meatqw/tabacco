@@ -21,8 +21,8 @@
 </head>
 
 <body class="page__body">
-  <div class="site-container">
-    <header class="header header--second">
+  <div class="site-container site-container--100vh">
+    <header class="header">
   <div class="container header__container">
     <div class="header__left">
       <div class="header__logo">
@@ -38,70 +38,110 @@
       </button>
       <button class="btn-reset btn btn--gray header__user"></button>
     </div>
+    <div class="header__right">
+      <button class="btn-reset btn header__btn header__btn--sidebar" data-sidebar-btn>
+      </button>
+      <ul class="list-reset header__list">
+        <li class="header__item">
+          <div class="header__icon">
+            <img loading="lazy" src="img/path-green.svg" class="image" width="22" height="22" alt="path">
+          </div>
+          <div class="header__info">
+            <div class="header__crit">В наличии</div>
+            <div class="header__value">6 700 ₽</div>
+          </div>
+        </li>
+        <li class="header__item">
+          <div class="header__icon">
+            <img loading="lazy" src="img/path-orange.svg" class="image" width="22" height="22" alt="path">
+          </div>
+          <div class="header__info">
+            <div class="header__crit">Удаленный склад</div>
+            <div class="header__value">12 450 ₽</div>
+          </div>
+        </li>
+        <li class="header__item">
+          <div class="header__icon">
+            <img loading="lazy" src="img/path-blue.svg" class="image" width="22" height="22" alt="path">
+          </div>
+          <div class="header__info">
+            <div class="header__crit">В пути</div>
+            <div class="header__value">10 050 ₽</div>
+          </div>
+        </li>
+      </ul>
+      <button class="btn-reset btn header__btn header__btn--path">
+        <img loading="lazy" src="img/path.svg" class="image" width="28" height="28" alt="path">
+        <div class="header__info">
+          <div class="header__crit header__crit--btn">Оформить</div>
+          <div class="header__value header__value--btn">29 200 ₽</div>
+        </div>
+      </button>
+    </div>
   </div>
 </header>
 
     <main class="main">
-      <div class="payment__container container">
-        <h1 class="payment__title">Оформление заказа G11-3NSTBM на сумму 29 200 ₽ </h1>
-        <form action="#" class="payment-form payment__form form">
-          <ul class="list-reset payment-form__list form__list">
-            <li class="payment-form__item form__item">
-              <h2 class="payment-form__item-title">Способ получения заказа</h2>
-              <form class="payment-form__item-form">
-                <label class="custom-checkbox payment-form__checkbox">
-                  Доставка
-                  <input type="radio" name="radio" class="custom-checkbox__field" checked="checked">
-                  <span class="custom-checkbox__content"></span>
-                </label>
-                <label class="custom-checkbox payment-form__checkbox">
-                  Самовывоз
-                  <input type="radio" name="radio" class="custom-checkbox__field">
-                  <span class="custom-checkbox__content"></span>
-                </label>
-              </form>
-            </li>
-            <li class="payment-form__item form__item">
-              <h2 class="payment-form__item-title">Точка доставки заказа</h2>
-              <form class="payment-form__item-form payment-form__item-form--column">
-                <label class="custom-checkbox payment-form__checkbox--column">
-                  Косарево 7 / 153025, Россия, Иваново / Марракеш Ясень
-                  <input type="radio" name="radio" class="custom-checkbox__field" checked="checked">
-                  <span class="custom-checkbox__content"></span>
-                </label>
-                <label class="custom-checkbox payment-form__checkbox--column">
-                  Якова Гарелина 2А / 145010, Россия, Иваново / Марракеш Ясень
-                  <input type="radio" name="radio" class="custom-checkbox__field">
-                  <span class="custom-checkbox__content"></span>
-                </label>
-              </form>
-            </li>
-            <li class="payment-form__item form__item">
-              <h2 class="payment-form__item-title">Способ оплаты</h2>
-              <form class="payment-form__item-form">
-                <label class="custom-checkbox payment-form__checkbox">
-                  Наличными
-                  <input type="radio" name="radio" class="custom-checkbox__field" checked="checked">
-                  <span class="custom-checkbox__content"></span>
-                </label>
-                <label class="custom-checkbox payment-form__checkbox">
-                  Расчетный
-                  <input type="radio" name="radio" class="custom-checkbox__field">
-                  <span class="custom-checkbox__content"></span>
-                </label>
-              </form>
-            </li>
-            <li class="payment-form__item form__item">
-              <h2 class="payment-form__item-title">Комментарий к заказу</h2>
-              <form class="payment-form__item-form">
-                <textarea class="payment-form__textarea" placeholder="Введите комментарии" name="comment"></textarea>
-              </form>
-            </li>
-          </ul>
-          <div class="payment-form__bottom">
-            <button class="btn-reset form__btn btn payment-form__btn" data-btn-popup>Оформить заказ</button>
-          </div>
-        </form>
+      <div class="main__container container">
+        <div class="sidebar" data-sidebar>
+  <ul class="list-reset sidebar__list accordion">
+    <li class="sidebar__item accordion-item">
+      <button class="btn-reset sidebar__btn sidebar__accordion accordion-header">Аксесуары для
+        кальяна</button>
+      <div class="sidebar__panel">
+        <ul class="list-reset sidebar__sublist">
+          <li class="sidebar__subitem">
+            <button class="btn-reset sidebar__btn sidebar__btn--sub">
+              <img loading="lazy" src="./img/Mini.svg" class="image" width="47" height="27" alt="Mini">
+            </button>
+          </li>
+          <li class="sidebar__subitem">
+            <button class="btn-reset sidebar__btn sidebar__btn--sub">
+              <img loading="lazy" src="./img/Mini.svg" class="image" width="47" height="27" alt="Mini">
+            </button>
+          </li>
+        </ul>
+      </div>
+    </li>
+    <li class="sidebar__item accordion-item">
+      <button class="btn-reset sidebar__btn sidebar__accordion accordion-header">Кальяны</button>
+      <div class="sidebar__panel">
+        <ul class="list-reset sidebar__sublist">
+          <li class="sidebar__subitem">
+            <button class="btn-reset sidebar__btn sidebar__btn--sub">
+              <img loading="lazy" src="./img/Mini.svg" class="image" width="47" height="27" alt="Mini">
+            </button>
+          </li>
+          <li class="sidebar__subitem">
+            <button class="btn-reset sidebar__btn sidebar__btn--sub">
+              <img loading="lazy" src="./img/Mini.svg" class="image" width="47" height="27" alt="Mini">
+            </button>
+          </li>
+        </ul>
+      </div>
+    </li>
+  </ul>
+</div>
+
+        <div class="main__content">
+          <section class="banners">
+  <ul class="list-reset banners__list">
+    <li class="banners__item">
+      <div class="banner"></div>
+    </li>
+    <li class="banners__item">
+      <div class="banner"></div>
+    </li>
+    <li class="banners__item">
+      <div class="banner"></div>
+    </li>
+    <li class="banners__item">
+      <div class="banner"></div>
+    </li>
+  </ul>
+</section>
+
+        </div>
       </div>
     </main>
     <div class="graph-modal">
@@ -181,25 +221,10 @@
   </div>
 </div>
 
-    <div class="popup-payment" data-main-popup>
-  <div class="graph-modal__container popup-payment__container" role="dialog" aria-modal="true">
-    <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"
-      data-close-popup></button>
-    <div class="graph-modal__content popup-payment__content">
-      <div class="popup-payment__img">
-        <img loading="lazy" src="../img/popup-img.svg" class="image" width="64" height="64" alt="success">
-      </div>
-      <h2 class="popup-payment__title">Заказ G11-3NSTBM оформлен</h2>
-      <p class="popup-payment__descr">
-        В ближайшее время с Вами свяжется менеджер для подтверждения заказа
-      </p>
-      <button class="btn-reset btn popup-payment__btn" data-close-popup-btn>Закрыть</button>
-    </div>
-  </div>
-</div>
-
   </div>
   <script src="https://snipp.ru/cdn/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 </body>
 
 </html>

@@ -16,6 +16,8 @@
   <link rel="stylesheet" href="css/vendor.css">
   <link rel="stylesheet" href="css/main.css">
   <script defer src="js/main.js"></script>
+  <!-- calendar -->
+
 </head>
 
 <body class="page__body">
@@ -26,11 +28,15 @@
       <div class="header__logo">
         <img loading="lazy" src="img/tobacco.svg" class="image" width="156" height="22" alt="Tobacco">
       </div>
-      <button class="btn-reset btn header__btn" data-graph-path="menu">
+      <button class="btn-reset btn header__btn" data-graph-path="menu" data-btn-open>
         <img loading="lazy" src="img/hamburger.svg" class="image" width="28" height="28" alt="path">
         <span>Каталог</span>
       </button>
-      <button class="btn-reset btn btn--gray header__user" onclick="location.href = '/main.html'"></button>
+      <button class="btn-reset btn header__btn header__btn--catalog js-modal-close" data-btn-close>
+        <img loading="lazy" src="img/close.svg" class="image" width="28" height="28" alt="path">
+        <span>Каталог</span>
+      </button>
+      <button class="btn-reset btn btn--gray header__user"></button>
     </div>
   </div>
 </header>
@@ -173,7 +179,7 @@
       </div>
       <div class="ordering-footer__item">
         <button class="btn-reset btn-red btn-red--clear">Очистить корзину</button>
-        <button class="btn-reset btn ordering-footer__btn" onclick="location.href = '/payment.html'">Далее</button>
+        <button class="btn-reset btn ordering-footer__btn">Далее</button>
       </div>
     </div>
   </div>
